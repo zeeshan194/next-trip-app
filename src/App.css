@@ -1,38 +1,54 @@
-.App {
+.main-container{
+  font-family: sans-serif, proxima-nova, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+.header{
+  border-color: #b8e2f2;
+  background-color: #d8ecfd;
+  height: 80px;
+  padding: 20px 70px 0px 70px;
+}
+.header p {
+  position: relative;
+  display: block;
+  padding-right: 30px;
+  margin-bottom: 0;
+  padding-left: 2rem;
+  color: #626462;
+  font-weight: 700;
+}
+.header .pipe {
+  font-weight: 700;
+  margin-right: 0.25rem;
+  margin-left: 0.25rem;
+}
+.alert-title {
+  font-weight: 800;
+  font-size: 16px;
+  text-transform: uppercase;
+  /* color: #626462; */
+  margin-left: 5px;
+}
+.app-container > h1{
   text-align: center;
+  color: #004290;
+}
+.site-card-border-less-wrapper {
+  padding: 20px 100px 0px 100px;
+  background: #ececec;
+  min-height: 700px;
+}
+.ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+  color: #fff !important;
+  text-shadow: 0 0 0.25px currentcolor;
+}
+.ant-tabs-card > .ant-tabs-nav .ant-tabs-tab-active, .ant-tabs-card > div > .ant-tabs-nav .ant-tabs-tab-active {
+  background-color: #1890ff !important;
+  color: #fff !important;
+}
+.ant-tabs-card.ant-tabs-top > .ant-tabs-nav .ant-tabs-tab-active, .ant-tabs-card.ant-tabs-top > div > .ant-tabs-nav .ant-tabs-tab-active {
+  border-bottom-color: #1890ff !important;
+}
+.ant-tabs-nav{
+  border-bottom: 1px solid #1890ff !important;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
