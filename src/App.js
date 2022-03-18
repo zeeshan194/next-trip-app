@@ -80,18 +80,26 @@ function App() {
   return (
     <div className='main-container'>
       <div className='header'>
-        <p>
-          <InfoCircleFilled style={{ fontSize: '16px', color: '#626462' }} />
+        <Row>
+          <Col span={24}>
+          <p>
+          <span className='info-icon'><InfoCircleFilled style={{ fontSize: '16px', color: '#626462' }} /></span>
           <span className="alert-title">Here when you're ready&nbsp;</span>
           <span className="pipe">|</span> 
           The federal mask mandate for public transportation – including buses, trains, and airplanes, has been extended through April 18, regardless of vaccination status.&nbsp;
           <a href="https://www.metrotransit.org/health" target='_blank'><strong>See how Metro Transit is keeping your ride safe.</strong></a>&nbsp;
           </p>
+          </Col>
+        </Row>
       </div>
       <div className="app-container site-card-border-less-wrapper">
-        <h1>Real Time Departures</h1>
+        <Row>
+          <Col span={24}>
+            <div className='heading'>Real-time Departures</div>
+          </Col>
+        </Row>
         <Tabs type="card" centered={true}>
-          <TabPane tab="By Route" key="1">
+          <TabPane tab="By route" key="1">
             <div>
               {
                 loaders.main ?
@@ -135,7 +143,7 @@ function App() {
               }
             </div>
           </TabPane>
-          <TabPane tab="By Stop" key="2">
+          <TabPane tab="By Stop #" key="2">
             <div>
               <MetroSearchStop
                 onSearchStop={onSearchStop}

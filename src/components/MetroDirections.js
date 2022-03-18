@@ -6,11 +6,11 @@ const { Option } = Select;
 const MetroRoutes = ({ directionData, selectedDirection, onChangeDirection, loaders }) => {
   return (
     <Row>
-      <Col style={{ marginTop: '10px' }} span={8} offset={8}>
+      <Col style={{ marginTop: '10px' }} lg={{span: 8, offset: 8}} xs={{span: 24}}>
         <Select
           showSearch
           size='large'
-          style={{ width: 350 }}
+          style={{ width: '100%' }}
           placeholder='Select Direction'
           optionFilterProp='children'
           value={selectedDirection}

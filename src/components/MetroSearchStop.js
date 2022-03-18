@@ -6,7 +6,7 @@ const { Search } = Input
 const MetroSearchStop = ({onSearchStop}) => {
   return (
     <Row>
-        <Col span={8} offset={8}>
+        <Col lg={{span: 8, offset: 8}} xs={{span: 24}}>
             <Search size='large' placeholder="input search text" onSearch={value => onSearchStop(value)} />
         </Col>
     </Row>
